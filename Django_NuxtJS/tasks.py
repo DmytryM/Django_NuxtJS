@@ -9,6 +9,11 @@
 
 #--------------------2-------------------
 
-s = input().split()
-res = [len(s[-1]) if len(s) > 1 else 0]
-print(*res)
+# s = input().split()
+# res = [len(s[-1]) if len(s) > 1 else 0]
+# print(*res)
+
+#--------------------3-------------------
+
+import math
+print(int(math.sqrt(int(input()))))
