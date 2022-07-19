@@ -44,7 +44,6 @@
 
 #--------------------7-------------------
 
-a = int(input())
-b = int(input())
-print(bin(a) + bin(b))
+s = input()
+print(s.count('A') <= 1 and 'LLL' not in s)
 
