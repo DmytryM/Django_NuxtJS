@@ -61,3 +61,8 @@
 # print(total)
 
 # --------------------9-------------------
+
+nums = [int(i) for i in input().split(',')]
+lst = [x for x in range(len(nums) - 1) if nums[x] > nums[x + 1]]
+print(('YES', 'NO')[len(lst) > 1])
+
