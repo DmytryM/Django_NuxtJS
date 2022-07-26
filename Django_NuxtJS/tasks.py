@@ -62,7 +62,20 @@
 
 # --------------------9-------------------
 
-nums = [int(i) for i in input().split(',')]
-lst = [x for x in range(len(nums) - 1) if nums[x] > nums[x + 1]]
-print(('YES', 'NO')[len(lst) > 1])
+# nums = [int(i) for i in input().split(',')]
+# lst = [x for x in range(len(nums) - 1) if nums[x] > nums[x + 1]]
+# print(('YES', 'NO')[len(lst) > 1])
 
+# --------------------10-------------------
+
+res = 1
+try:
+    nums = [int(i) for i in input().split(',')]
+    for i in range(len(nums) - 1):
+        if nums[i] < nums[i + 1]:
+            res += 1
+        else:
+            break
+    print(res)
+except ValueError:
+    print(0)
