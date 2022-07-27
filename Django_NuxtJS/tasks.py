@@ -68,14 +68,21 @@
 
 # --------------------10-------------------
 
-res = 1
-try:
-    nums = [int(i) for i in input().split(',')]
-    for i in range(len(nums) - 1):
-        if nums[i] < nums[i + 1]:
-            res += 1
-        else:
-            break
-    print(res)
-except ValueError:
-    print(0)
+# res = 1
+# try:
+#     nums = [int(i) for i in input().split(',')]
+#     for i in range(len(nums) - 1):
+#         if nums[i] < nums[i + 1]:
+#             res += 1
+#         else:
+#             break
+#     print(res)
+# except ValueError:
+#     print(0)
+
+# --------------------11-------------------
+
+nums = [int(i) for i in  input().split(',')]
+if len(nums) % 2 == 0:
+    print(-1)
+print(nums)
