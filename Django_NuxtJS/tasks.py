@@ -93,5 +93,12 @@
 
 # --------------------13-------------------
 
-address = input()
-print(address.replace('.', '[.]'))
+# address = input()
+# print(address.replace('.', '[.]'))
+
+# --------------------14-------------------
+
+# a = [int(i) for i in  input().split(',')]
+# lst = [i for i in a if i % 2 == 0]
+# [lst.append(x) for x in a if x % 2 == 1]
+# print(lst)
