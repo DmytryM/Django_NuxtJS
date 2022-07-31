@@ -82,7 +82,16 @@
 
 # --------------------11-------------------
 
-nums = [int(i) for i in  input().split(',')]
-if len(nums) % 2 == 0:
-    print(-1)
-print(nums)
+# nums = [int(i) for i in  input().split(',')]
+# if len(nums) % 2 == 0:
+#     print(-1)
+# print(nums)
+
+# --------------------12-------------------
+
+# print(sorted(map(lambda x: x ** 2, [int(i) for i in  input().split(',')])))
+
+# --------------------13-------------------
+
+address = input()
+print(address.replace('.', '[.]'))
