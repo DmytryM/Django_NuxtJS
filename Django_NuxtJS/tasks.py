@@ -24,6 +24,7 @@
 # b = []
 # minimal = min((word for word in s if word), key=len)
 # s.remove(minimal)
+
 # for i in range(len(s)):
 #     for j in minimal:
 #         index = minimal.index(j)
@@ -105,11 +106,28 @@
 
 # --------------------15-------------------
 
-a = [[1,2,3],[4,5,6],[7,8,9]]
-print(a)
-res = 0
-for i in a:
-    for j in i:
-        res += j
-print(res)
+# a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(a)
+# res = 0
+# for i in a:
+#     for j in i:
+#         res += j
+# print(res)
+
 # --------------------16-------------------
+
+import torch
+import torch.optim as optim
+import torch.nn as nn
+from torchviz import make_dot
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+# Our data was in Numpy arrays, but we need to transform them into PyTorch's Tensors
+# and then we send them to the chosen device
+x_train_tensor = torch.from_numpy(x_train).float().to(device)
+y_train_tensor = torch.from_numpy(y_train).float().to(device)
+
+# Here we can see the difference - notice that .type() is more useful
+# since it also tells us WHERE the tensor is (device)
+print(type(x_train), type(x_train_tensor), x_train_tensor.type())
