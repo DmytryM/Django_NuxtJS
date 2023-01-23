@@ -5,6 +5,14 @@
 # -------------------------------2
 # print(input().replace('x', '??'))
 # -------------------------------3
-a = input()
-for i in a:
-    if
+# a = input()
+# counter = 0
+# for i in range(len(a)):
+#     if a[i] == 'a':
+#         for j in range(i, len(a)):
+#             if a[j] == 'b':
+#                 counter += 1
+# print(counter)
+# -------------------------------4
+print(1000000007 % int(input()))
+
