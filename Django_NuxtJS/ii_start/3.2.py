@@ -14,5 +14,18 @@
 #                 counter += 1
 # print(counter)
 # -------------------------------4
-print(1000000007 % int(input()))
+# def iterativeFib(n):
+#     a, b = 0, 1
+#     for i in range(n):
+#         a, b = b, a + b
+#     return a
+#
+#
+# print(iterativeFib(int(input())) % 1000000007)
+# -------------------------------5
+n = int(input())
+n1 = n**0.5
+n2 = n**(1/3)
+n3 = n/(n1*n2)
 
+print(int(n1+n2-n3))
