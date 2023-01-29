@@ -52,3 +52,7 @@
 # print(cmp_prev(3))
 # print(nums)
 # -------------------------------3
+def Set(func):
+
+def Compute(string):
+    return
