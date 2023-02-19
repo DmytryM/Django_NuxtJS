@@ -10,3 +10,15 @@ class MyNum:
         return self.val
 
 # -------------------------------2
+class MyQueue:
+    def __init__(self):
+
+
+    def push(self, val):
+
+
+    def front():
+
+
+    def pop():
+
