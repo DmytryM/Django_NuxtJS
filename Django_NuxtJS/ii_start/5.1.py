@@ -133,3 +133,21 @@
 # obj = Some()
 # obj.printWords() # Вызов функции ничего не даст
 # obj.__res()
+
+
+
+# class Simple_Class():
+#   def __init__(self):
+#     print("Я родился")
+#   def __del__(self):
+#     print("Мой час пришел")
+#
+# new_class = Simple_Class()
+
+
+# class Simple_Class():
+#   def __add__(self,n):
+#     print(1 + n)
+#
+# res = Simple_Class()
+# b = res + 1
