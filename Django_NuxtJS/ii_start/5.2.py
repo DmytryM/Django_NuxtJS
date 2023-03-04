@@ -25,13 +25,18 @@ class MyNum:
 
 # -------------------------------3
 class Neuron:
+    prev_x = list()
 
-    def __init__(self, w, f = lambda x: x):
-        #YOUR CODE HERE
+    def __init__(self, w, f=lambda x: x):
+        self.weight = w
+        self.func = f
+        prev_x = None
 
     def forward(self, x):
-        #YOUR CODE HERE
+        self.prev_x = x
+        result = sum(map(lambda i1, i2: i1 * i2, self.weight, x))
+        return self.func(result)
 
     def backlog(self):
-        #YOUR CODE HERE
+        return self.prev_x
 
