@@ -23,9 +23,13 @@
 #
 # print(iterativeFib(int(input())) % 1000000007)
 # -------------------------------5
-n = int(input())
-n1 = n**0.5
-n2 = n**(1/3)
-n3 = n/(n1*n2)
+import math
 
-print(int(n1+n2-n3))
+n = int(input())
+count = 0
+
+for i in range(1, n+1):
+    if int(math.sqrt(i))**2 == i or int(i**(1/3))**3 == i:
+        count += 1
+
+print(count)
