@@ -25,17 +25,36 @@ aside h3 {
     font-size: 28px;
 }
 
-aside ul {list-style: none}
+aside ul {
+    list-style: none;
+}
 
 aside ul li{
     color: #fff;
     display: block;
     margin-top: 20px;
-    transition: all .6s ease;
+    transition: transform .6s ease;
 }
 
 aside ul li:hover, aside ul a:hover{
     color: #eb5959;
     text-decoration: none;
     transform: scale(1.05);
+}
+
+main .features{
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1{
+    font-size: 50px;
+}
+
+main .features p{
+    max-width: 400px;
+    margin: 20px auto;
 }
