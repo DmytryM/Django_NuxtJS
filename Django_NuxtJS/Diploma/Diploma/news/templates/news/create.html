@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Create news{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Create news</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Назва" class="form-control"><br>
+            <input type="text" placeholder="Анонс" class="form-control"><br>
+            <textarea class="form-control" placeholder="Текст"></textarea><br>
+            <input type="date" class="form-control"><br>
+            <input type="time" class="form-control"><br>
+            <button class="btn btn-success" type="submit">Додати</button>
+        </form>
+    </div>
+{% endblock %}
