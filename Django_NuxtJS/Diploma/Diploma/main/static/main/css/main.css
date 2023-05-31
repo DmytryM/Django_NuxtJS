@@ -2,6 +2,20 @@ body{
     background: #2c2c2c;
 }
 
+.navbar{
+    background: #2c2c2c;
+    width: 1000px;
+    margin-left: 1550px;
+    color: #fff;
+
+}
+
+.navbar a:hover{
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
 aside{
     float: left;
     background: #181818;
@@ -72,3 +86,4 @@ form{
     width: 520px;
     margin-top: 50px;
 }
+
