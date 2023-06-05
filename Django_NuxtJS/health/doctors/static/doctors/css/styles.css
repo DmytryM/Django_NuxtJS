@@ -76,7 +76,7 @@ ul.list-articles li {
 .clear {clear: both;}
 
 .header {
-	background: #3F4137;
+	background: #181818;
 	height: 60px;
 }
 
@@ -91,7 +91,7 @@ ul.mainmenu {
 	margin: 0;
 	padding: 0;
 	height: 60px;
-	color: #fdc073;
+	color: #fff;
 	font-size: 20px;
 	overflow: hidden;
 }
@@ -103,11 +103,13 @@ ul.mainmenu li.logo {margin: 0;}
 ul.mainmenu li.last {float: right;}
 
 ul.mainmenu li a {
-	color: #fdc073;
+	color: #fff;
 	text-decoration: none;
 }
 ul.mainmenu li a:hover {
-	color: #FDA83D;
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
 }
 
 .panelitems {
@@ -162,7 +164,7 @@ div.button {
 
 .left-chapters {
 	margin: 0;
-	background: #eee;
+	background: #181818;
 	border-right: 1px solid #ccc;
 	min-height: 100%;
 }
@@ -180,10 +182,14 @@ div.button {
 }
 .left-chapters ul li.selected {color: #0059b2; }
 .left-chapters ul li a {
-	color: #444;
+	color: #fff;
 	text-decoration: none;
 }
-.left-chapters ul li a:hover { color: #CC0000; }
+.left-chapters ul li a:hover {
+	color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
 .left-chapters ul li.share {margin: 60px 0 0 0;}
 .left-chapters ul li.share p {margin: 30px 0 30px 0;}
 .left-chapters ul li.share a {
@@ -356,7 +362,7 @@ ul.lang-list li a:hover {color: #fdc073;}
 #footer {
 	box-sizing: border-box;
 
-	background: #3F4137;
+	background: #181818;
 	padding: 5px;
 	color: #aaa;
 	font-size: 14px;
