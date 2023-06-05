@@ -67,22 +67,22 @@ def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1>Страница не найдена</h1>')
 
 
-# def show_post(request, post_slug):
-#     post = get_object_or_404(Doctors, slug=post_slug)
-#
-#     context = {
-#
-#         'post': post,
-#         'menu': menu,
-#         'title': 'Отображение по рубрикам',
-#         'cat_selected': post.cat_id,
-#     }
-#
-#     return render(request, 'doctors/post.html', context=context)
+def show_post(request, post_slug):
+    post = get_object_or_404(Doctors, slug=post_slug)
 
-class ShowPost(DetailView):
-    model = Doctors
-    template_name = 'doctors/post.html'
+    context = {
+
+        'post': post,
+        'menu': menu,
+        'title': 'Отображение по рубрикам',
+        'cat_selected': post.cat_id,
+    }
+
+    return render(request, 'doctors/post.html', context=context)
+
+# class ShowPost(DetailView):
+#     model = Doctors
+#     template_name = 'doctors/post.html'
 
 class DoctorsCategory(ListView):
     model = Doctors
