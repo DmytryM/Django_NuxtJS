@@ -11,6 +11,11 @@ a {
 	color: #0059b2;
 	text-decoration: none;
 }
+
+.health{
+	color: #0059b2;
+}
+
 a:hover {
 	color: #CC0000;
 	text-decoration: underline;
