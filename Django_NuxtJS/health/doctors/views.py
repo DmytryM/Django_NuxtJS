@@ -15,7 +15,8 @@ menu = [
     {'title': 'Про сайт', 'url_name': 'about'},
     {'title': 'Додати', 'url_name': 'add_page'},
     {'title': 'Зворотній зв`язок', 'url_name': 'contact'},
-    {'title': 'Увійти', 'url_name': 'login'},
+    {'title': 'Лікарні', 'url_name': 'likarni'},
+    # {'title': 'Увійти', 'url_name': 'login'},
 ]
 
 
@@ -41,6 +42,14 @@ def about(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'doctors/about.html', {'page_obj': page_obj, 'menu': menu, 'title': 'Про сайт'})
+
+def likarni(request):
+    # contact_list = Doctors.objects.all()
+    # paginator = Paginator(contact_list, 3)
+    #
+    # page_number = request.GET.get('page')
+    # page_obj = paginator.get_page(page_number)
+    return render(request, 'doctors/likarni.html', {'menu': menu, 'title': 'Про сайт'})
 
 
 class AddPage(LoginRequiredMixin, DataMixin, CreateView):
