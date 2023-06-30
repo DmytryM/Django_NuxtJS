@@ -64,6 +64,16 @@ class AddPage(LoginRequiredMixin, DataMixin, CreateView):
         c_def = self.get_user_context(title="Додати")
         return dict(list(context.items()) + list(c_def.items()))
 
+def addzapit(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            try:
+                Doctors.objects.create(**form.cleaned_data)
+                return redirect('home')
+            except:
+                form.add_error(None, 'Помилка')
+
 
 class ContactFormView(DataMixin, FormView):
     form_class = ContactForm
